@@ -1,0 +1,14 @@
+<div class="product-details-container">
+    <div class="product-details">
+      <div class="image-container">
+        <img [src]="product.imageUrl" alt="{{product.name}}" class="img-fluid">
+      </div>
+      <div class="info-container">
+        <h2 class="product-name">{{product.name}}</h2>
+        <p class="product-description">{{product.description}}</p>
+        <h4 class="product-price">R$ {{product.price | number:'1.2-2'}}</h4>
+        <a routerLink="/" class="btn btn-primary">Voltar</a>
+      </div>
+    </div>
+  </div>
+  

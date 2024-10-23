@@ -1,0 +1,14 @@
+<div class="products-container">
+    <h2 class="text-center my-4">Explore Nossos Produtos</h2>
+    <div class="products-grid">
+      <div class="product-card" *ngFor="let product of products">
+        <img class="product-image" [src]="product.imageUrl" alt="{{product.name}}">
+        <div class="product-info">
+          <h5 class="product-title">{{product.name}}</h5>
+          <p class="product-price">R$ {{product.price | number:'1.2-2'}}</p>
+          <a [routerLink]="['/details', product.id]" class="btn btn-secondary">Ver Mais</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  
